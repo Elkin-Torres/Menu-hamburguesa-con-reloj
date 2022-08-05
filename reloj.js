@@ -6,7 +6,7 @@ const d = document;
 export function mostrar(reloj, btnMostrar, btnOcultar) {
   let aparicion;
 
-  document.addEventListener("click", (e) => {
+  d.addEventListener("click", (e) => {
     if (e.target.matches(btnMostrar)) {
       aparicion = setInterval(() => {
         let relojFuncional = new Date().toLocaleTimeString();
@@ -18,7 +18,7 @@ export function mostrar(reloj, btnMostrar, btnOcultar) {
     if (e.target.matches(btnOcultar)) {
       clearInterval(aparicion);
       d.querySelector(reloj).innerHTML = null;
-      document.querySelector(btnMostrar).disabled = false;
+      d.querySelector(btnMostrar).disabled = false;
     }
   });
 }
@@ -40,7 +40,7 @@ export function sonarAlarma(sonido, btnIniciar, btnParar) {
       clearInterval(temporizador);
       $alarma.pause();
       $alarma.currentTime = 0;
-      document.querySelector(btnIniciar).disabled = false;
+      d.querySelector(btnIniciar).disabled = false;
     }
   });
 }
