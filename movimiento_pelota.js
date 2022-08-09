@@ -9,9 +9,9 @@ export function movement(e, pelota, campo) {
     limitsBlock = $block.getBoundingClientRect(),
     limitsSpace = $space.getBoundingClientRect();
 
-  console.log(e.keyCode);
+ /* console.log(e.keyCode);
   console.log(e.key);
-  console.log(limitsBlock, limitsSpace);
+  console.log(limitsBlock, limitsSpace);*/
 
   $block.style.transform = `translate(${x * 10}px, ${y * 10}px)`;
   switch (e.key) {
