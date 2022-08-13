@@ -32,6 +32,12 @@ img {
 }
 
 /*Menú*/
+
+/* .aBtnArrow{
+  z-index: 999;
+  position: fixed;
+} */
+
 #añoNuevo {
   text-align: center;
   font-size: 70px;
@@ -39,6 +45,26 @@ img {
 
 .aviso {
   text-align: right;
+}
+
+.btnArrow {
+  position: fixed;
+  z-index: 997;
+  bottom: 1vh;  
+  right: calc(4.2rem + 1vw);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 40px;
+   background-color: var(--main-color);
+   border: none; 
+   cursor: pointer;
+   transition: all 0.3s ease-out;
+}
+
+.btnArrow:hover {
+  background-color: var(--second-color) ;
+  color: var(--main-color);
 }
 
 #campo {
@@ -87,6 +113,11 @@ header {
 .header h1 {
   margin: 0 auto;
   text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
 }
 
 h4 {

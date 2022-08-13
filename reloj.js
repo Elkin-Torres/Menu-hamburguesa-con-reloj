@@ -44,3 +44,4 @@ export function sonarAlarma(sonido, btnIniciar, btnParar) {
     }
   });
 }
+
