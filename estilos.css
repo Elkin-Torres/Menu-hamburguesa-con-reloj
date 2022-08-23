@@ -26,6 +26,31 @@ body {
   overflow-x: hidden;
 }
 
+body.dark {
+  background-color: black;
+}
+
+body.dark h2 {
+  color: white;
+}
+
+body.dark h3 {
+  color: white;
+}
+
+body.dark h4 {
+  color: white;
+}
+
+body.dark .aviso {
+  color: white;
+}
+
+body.dark .btnCambioColor {
+  background-color: yellow;
+  transition: all 0.3s ease-out;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -50,21 +75,35 @@ img {
 .btnArrow {
   position: fixed;
   z-index: 997;
-  bottom: 1vh;  
+  bottom: 1vh;
   right: calc(4.2rem + 1vw);
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   font-size: 40px;
-   background-color: var(--main-color);
-   border: none; 
-   cursor: pointer;
-   transition: all 0.3s ease-out;
+  background-color: var(--main-color);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
 }
 
 .btnArrow:hover {
-  background-color: var(--second-color) ;
+  background-color: var(--second-color);
   color: var(--main-color);
+}
+
+.btnCambioColor {
+  position: fixed;
+  z-index: 997;
+  width: 4rem;
+  height: 4rem;
+  bottom: 1vh;
+  left: 1vh;
+  border-radius: 50%;
+  border: none;
+  background-color: #212121;
+  font-size: 1.8rem;
+  transition: all 0.3s ease-out;
 }
 
 #campo {
@@ -74,13 +113,13 @@ img {
   position: relative;
 }
 
-.conteo { 
+.conteo {
   font-size: 36px;
   margin-top: 2rem;
 }
 
-.Count{
-  font-size: 36px;  
+.Count {
+  font-size: 36px;
   margin-top: 4rem;
 }
 
