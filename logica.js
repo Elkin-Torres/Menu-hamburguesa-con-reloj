@@ -6,6 +6,7 @@ import { conteo } from "./conteo.js";
 import { retornar } from "./btnFlecha.js";
 import { cambioColor } from "./cambio_color.js";
 import { pantallaResponsiva } from "./pantallaResponsive.js";
+import { diseñoResponsive } from "./diseñoResponsive.js";
 
 const d = document;
 
@@ -37,10 +38,24 @@ d.addEventListener("DOMContentLoaded", (e) => {
     `<a href="https://www.google.com/maps/place/Plaza+de+Bol%C3%ADvar/@4.5981206,-74.0782322,17z/data=!3m1!4b1!4m5!3m4!1s0x8e3f99a7eccfe58f:0x99cb72b35351476!8m2!3d4.5981206!4d-74.0760435" target="_blank" reel="noopener">Link Mapa</a>`
   );
 
-  
+  diseñoResponsive("#formulario");
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   movement(e, "pelota", "campo");
 });
+
+
+/*const formulario = d.getElementById("formulario");
+let verificando;
+d.addEventListener("submit",(e)=>{
+if(e.target === formulario){
+   verificando = console.log(
+     formulario.URL.value,
+     formulario.ancho.value,
+     formulario.alto.value
+   );
+}
+})*/
+

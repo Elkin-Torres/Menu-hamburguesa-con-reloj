@@ -28,6 +28,7 @@ body {
 
 body.dark {
   background-color: black;
+
 }
 
 body.dark h2 {
@@ -134,8 +135,8 @@ img {
   display: none;
 }
 
-.enlaceUbicacion{
-display: none;
+.enlaceUbicacion {
+  display: none;
 }
 
 .esquema {
@@ -166,7 +167,6 @@ header {
   visibility: hidden;
   opacity: 0;
 }
-
 
 h4 {
   font-family: sans-serif;
@@ -240,8 +240,6 @@ h4 {
   top: 0;
   left: 0;
 }
-
-
 
 .section {
   padding: 2rem;
