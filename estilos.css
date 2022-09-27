@@ -28,7 +28,6 @@ body {
 
 body.dark {
   background-color: black;
-
 }
 
 body.dark h2 {
@@ -129,6 +128,22 @@ img {
   display: flex;
   justify-content: space-around;
   margin: 0 auto;
+}
+
+.deteccion,
+.deteccionNo {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;  
+  background-color: green;
+}
+
+.deteccionNo {
+  background-color: red;
 }
 
 .enlaceVideo {

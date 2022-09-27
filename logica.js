@@ -7,7 +7,7 @@ import { retornar } from "./btnFlecha.js";
 import { cambioColor } from "./cambio_color.js";
 import { pantallaResponsiva } from "./pantallaResponsive.js";
 import { diseñoResponsive } from "./diseñoResponsive.js";
-
+import {deteccionConexion} from "./deteccionConexion.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -39,13 +39,15 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
 
   diseñoResponsive("#formulario");
+
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
-  movement(e, "pelota", "campo");
+  movement(e, "pelota", "campo");  
 });
 
+deteccionConexion();
 
 /*const formulario = d.getElementById("formulario");
 let verificando;
