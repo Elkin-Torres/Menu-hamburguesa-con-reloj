@@ -1,4 +1,4 @@
-import hamburguerMenu from "./menu_hamburguesa.js";
+import  hamburguerMenu from "./menu_hamburguesa.js";
 import { mostrar, sonarAlarma } from "./reloj.js";
 import { shortcuts } from "./atajos.js";
 import { movement } from "./movimiento_pelota.js";
@@ -8,6 +8,9 @@ import { cambioColor } from "./cambio_color.js";
 import { pantallaResponsiva } from "./pantallaResponsive.js";
 import { diseñoResponsive } from "./diseñoResponsive.js";
 import {deteccionConexion} from "./deteccionConexion.js";
+import {funcionInit} from "./geolocalizacion.js";
+import { deteccion } from "./deteccionCamara.js";
+import {filtrosDeBusqueda } from "./filtros.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -39,6 +42,12 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
 
   diseñoResponsive("#formulario");
+  
+  funcionInit(".obtenerUbicacion", ".borrarUbicacion");
+
+  deteccion(".video", "#activarCamara");
+
+  filtrosDeBusqueda(".card-filter", ".card");
 
 });
 
@@ -49,15 +58,6 @@ d.addEventListener("keydown", (e) => {
 
 deteccionConexion();
 
-/*const formulario = d.getElementById("formulario");
-let verificando;
-d.addEventListener("submit",(e)=>{
-if(e.target === formulario){
-   verificando = console.log(
-     formulario.URL.value,
-     formulario.ancho.value,
-     formulario.alto.value
-   );
-}
-})*/
+
+
 
