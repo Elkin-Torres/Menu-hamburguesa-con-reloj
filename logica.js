@@ -11,6 +11,8 @@ import {deteccionConexion} from "./deteccionConexion.js";
 import {funcionInit} from "./geolocalizacion.js";
 import { deteccion } from "./deteccionCamara.js";
 import {filtrosDeBusqueda } from "./filtros.js";
+import {sorteo} from "./sorteo.js";
+import {slider} from "./sliderResponsive.js";
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -48,6 +50,10 @@ d.addEventListener("DOMContentLoaded", (e) => {
   deteccion(".video", "#activarCamara");
 
   filtrosDeBusqueda(".card-filter", ".card");
+
+  sorteo(".sorteo", ".lenguaje");
+
+  slider();
 
 });
 
