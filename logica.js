@@ -13,6 +13,7 @@ import { deteccion } from "./deteccionCamara.js";
 import {filtrosDeBusqueda } from "./filtros.js";
 import {sorteo} from "./sorteo.js";
 import {slider} from "./sliderResponsive.js";
+
 const d = document;
 
 d.addEventListener("DOMContentLoaded", (e) => {
@@ -54,6 +55,8 @@ d.addEventListener("DOMContentLoaded", (e) => {
   sorteo(".sorteo", ".lenguaje");
 
   slider();
+
+
 
 });
 

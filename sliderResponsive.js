@@ -4,6 +4,7 @@ export function slider (){
     $next = d.querySelector(".nextBtn"),
     $slider = d.querySelectorAll(".slider");
 
+
 let i= 0;
 
 d.addEventListener("click",(e)=>{
