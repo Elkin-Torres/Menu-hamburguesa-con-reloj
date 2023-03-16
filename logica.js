@@ -1,4 +1,4 @@
-import  hamburguerMenu from "./menu_hamburguesa.js";
+import hamburguerMenu from "./menu_hamburguesa.js";
 import { mostrar, sonarAlarma } from "./reloj.js";
 import { shortcuts } from "./atajos.js";
 import { movement } from "./movimiento_pelota.js";
@@ -7,12 +7,12 @@ import { retornar } from "./btnFlecha.js";
 import { cambioColor } from "./cambio_color.js";
 import { pantallaResponsiva } from "./pantallaResponsive.js";
 import { diseñoResponsive } from "./diseñoResponsive.js";
-import {deteccionConexion} from "./deteccionConexion.js";
-import {funcionInit} from "./geolocalizacion.js";
+import { deteccionConexion } from "./deteccionConexion.js";
+import { funcionInit } from "./geolocalizacion.js";
 import { deteccion } from "./deteccionCamara.js";
-import {filtrosDeBusqueda } from "./filtros.js";
-import {sorteo} from "./sorteo.js";
-import {slider} from "./sliderResponsive.js";
+import { filtrosDeBusqueda } from "./filtros.js";
+import { sorteo } from "./sorteo.js";
+import { slider } from "./sliderResponsive.js";
 
 const d = document;
 
@@ -20,7 +20,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   hamburguerMenu(".panel-btn", ".panel", ".menu a");
   mostrar("#time", "#mostrarReloj", "#ocultarReloj");
   sonarAlarma("assets/alarma.mp3", "#iniciarAlarma", "#detenerAlarma");
-  conteo("Dec 31 2022 23:59:59 GMT-0500");
+  conteo("Dec 31 2023 23:59:59 GMT-0500");
   retornar(".btnArrow");
   cambioColor(".btnCambioColor");
   pantallaResponsiva(
@@ -45,7 +45,7 @@ d.addEventListener("DOMContentLoaded", (e) => {
   );
 
   diseñoResponsive("#formulario");
-  
+
   funcionInit(".obtenerUbicacion", ".borrarUbicacion");
 
   deteccion(".video", "#activarCamara");
@@ -55,18 +55,11 @@ d.addEventListener("DOMContentLoaded", (e) => {
   sorteo(".sorteo", ".lenguaje");
 
   slider();
-
-
-
 });
 
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
-  movement(e, "pelota", "campo");  
+  movement(e, "pelota", "campo");
 });
 
 deteccionConexion();
-
-
-
-
