@@ -14,7 +14,6 @@ export function funcionInit(btnUbicacion, btnBorrarUbicacion) {
       }
 
       const onUbicacionConcedida = (ubicacion) => {
-        console.log("Tengo la ubicación: ", ubicacion);
         const coordenadas = ubicacion.coords;
         $latitud.innerText = coordenadas.latitude;
         $longitud.innerText = coordenadas.longitude;
@@ -24,7 +23,6 @@ export function funcionInit(btnUbicacion, btnBorrarUbicacion) {
       const onErrorDeUbicacion = (err) => {
         $latitud.innerText = "Error obteniendo ubicación: " + err.message;
         $longitud.innerText = "Error obteniendo ubicación: " + err.message;
-        console.log("Error obteniendo ubicación: ", err);
       };
 
       const opcionesDeSolicitud = {

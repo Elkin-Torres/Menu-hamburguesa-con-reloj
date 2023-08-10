@@ -18,23 +18,3 @@ export function sorteo (btn,lenguaje){
  })
 }
 
- /* d.addEventListener("click", (e) => {
-    let numero = Math.floor(Math.random() * 10);
-    let informacion = [
-      "Javascript",
-      "Java",
-      "Python",
-      "GO",
-      "C++",
-      "C",
-      "Ruby",
-      "PHP",
-      "Rust",
-      "Perl",
-    ];
-    if (e.target.matches(btn)) {
-      console.log(`El ganador es ${informacion[numero]}`);
-      alert(`El ganador es ${informacion[numero]}`);
-    }
-  });
-  */

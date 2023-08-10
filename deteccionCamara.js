@@ -9,7 +9,6 @@ export function deteccion(video, activarCamara) {
       n.mediaDevices
         .getUserMedia({ video: true, audio: false })
         .then((stream) => {
-          console.log(stream);
           $video.srcObject = stream;
           $video.play();
         })
@@ -19,7 +18,6 @@ export function deteccion(video, activarCamara) {
             `<p>Ocurrio el siguiente error:<mark>${error}</mark></p> 
             <p>- Para acceder a la cámara debe conceder el permiso, luego debe actualizar el navegador -</p>`
           );
-          console.log(`Ocurrio el siguiente error: ${error}`);
         });
       }
     }
