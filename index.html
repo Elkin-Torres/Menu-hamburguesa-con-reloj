@@ -11,17 +11,17 @@
 </head>
 
 <body>
-
+  <!--header-->
   <header class="header">
     <h1>Ejercicios del DOM</h1>
   </header>
-
+  <!--btn menu-hamburguer-->
   <button class="panel-btn hamburger hamburger--vortex " type="button">
     <span class="hamburger-box">
       <span class="hamburger-inner"></span>
     </span>
   </button>
-
+  <!--aside menu starts-->
   <aside class="panel">
     <nav class="menu">
       <a href="#seccion1">Reloj Digital y Alarma Sonora</a>
@@ -35,14 +35,12 @@
       <a href="#seccion9">Filtros de búsquedas</a>
       <a href="#seccion10">Sorteo digital</a>
       <a href="#seccion11">Responsive Slider</a>
-
-
-
-
     </nav>
   </aside>
-
+  <!--aside menu ends-->
+<!--main starts-->
   <main>
+    <!--section 1 starts-->
     <section id="seccion1" class="section">
       <h2>Reloj Digital y Alarma Sonora</h2>
       <h4 class="mainTime" id="time">
@@ -56,6 +54,8 @@
 
       </div>
     </section>
+      <!--section 1 ends-->
+    <!--section 2 starts-->
     <section id="seccion2" class="section">
       <h2>Eventos del Teclado</h2>
       <section id="campo">
@@ -63,6 +63,8 @@
       </section>
       <footer class="aviso"><small>Mueve el balón con las flechas del teclado</small></footer>
     </section>
+     <!--section 2 ends-->
+    <!--section 3 starts-->
     <section id="seccion3" class="section">
       <h2 class="Count">Countdown</h2>
       <h3 class="faltan">Para que se termine el año faltan:</h3>
@@ -87,12 +89,15 @@
       <h3 class="añoNuevo" id="añoNuevo"></h3>
 
     </section>
+    <!--section 3 ends-->
+    <!--section 4 starts-->
     <section id="seccion4" class="section">
       <h2>Diseño Responsivo</h2>
       <section id="video"></section>
       <section id="ubicacion"></section>
     </section>
-
+    <!--section 4 ends-->
+    <!--section 5 starts-->
     <section id="seccion5" class="section">
       <h2>Probador responsivo</h2>
       <form id="formulario">
@@ -106,12 +111,16 @@
         <input type="button" name="finalizar" value="cerrar">
       </form>
     </section>
+    <!--section 5 ends-->
+    <!--section 6 starts-->
     <section id="seccion6" class="section">
       <h2>Detección de conexión</h2>
       <p class="parrafoDeteccionDeRed">-Si desconectas el internet podrás observar un aviso que saldrá en la parte
         superior de la ventana el cual informará de la caída de la red,por otro lado cuando se reestlezca la conexión
         podrás evidenciar un aviso anunciando dicho evento-</p>
     </section>
+     <!--section 6 ends-->
+    <!--section 7 starts-->
     <section id="seccion7" class="section">
       <h2>Geolocalización</h2>
       <button class="obtenerUbicacion">Obtener Ubicación</button>
@@ -121,6 +130,8 @@
       <a target="_blank" rel="nofollow" href="#" id="enlace"> Abrir en Google Maps</a>
 
     </section>
+    <!--section 7 ends-->
+    <!--section 8 starts-->
     <section id="seccion8" class="section">
       <h2>Detección Cámara</h2>
       <button id="activarCamara">
@@ -130,6 +141,8 @@
         <video class="video"></video>
       </div>
     </section>
+    <!--section 8 ends-->
+    <!--section 9 starts--> 
     <section id="seccion9" class="section">
       <h2>Filtros de búsqueda</h2>
       <input type="search" placeholder="Buscar..." class="card-filter">
@@ -169,6 +182,8 @@
       </article>
 
     </section>
+    <!--section 9 ends-->  
+    <!--section 10 starts--> 
     <section id="seccion10" class="section">
       <h2> - Sorteo digital -</h2>
 
@@ -186,6 +201,8 @@
       </ul>
       <button class="sorteo">Obtener ganador</button>
     </section>
+    <!--section 10 ends-->  
+    <!--section 11 starts--> 
     <section id="seccion11" class="section">
       <h2>Responsive Slider</h2>
       <div class="contenedor">
@@ -209,13 +226,13 @@
         </div>
       </div>
     </section>
-
-
+    <!--section 11 ends-->  
+    <!--section 12 starts-->
   </main>
-
+  <!--main ends-->
   <button class="btnArrow hidden">&#11014; </button>
   <button class="btnCambioColor"> 🌙</button>
-
+  <!--script js-->
   <script src="logica.js" type="module"></script>
 </body>
 

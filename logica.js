@@ -15,7 +15,7 @@ import { sorteo } from "./sorteo.js";
 import { slider } from "./sliderResponsive.js";
 
 const d = document;
-
+/*functions that are called when loading the DOM starts*/
 d.addEventListener("DOMContentLoaded", (e) => {
   hamburguerMenu(".panel-btn", ".panel", ".menu a");
   mostrar("#time", "#mostrarReloj", "#ocultarReloj");
@@ -56,10 +56,13 @@ d.addEventListener("DOMContentLoaded", (e) => {
 
   slider();
 });
+/*functions that are called when loading the DOM ends*/
 
+/*functions called when a key is pressed*/
 d.addEventListener("keydown", (e) => {
   shortcuts(e);
   movement(e, "pelota", "campo");
 });
 
+//functions called by default
 deteccionConexion();
